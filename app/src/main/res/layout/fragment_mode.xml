@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ModeFragment">
+
+    <ImageView
+        android:id="@+id/imageViewSettingTrafficCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="130dp"
+        android:src="@drawable/traffic_code_car_120"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageButton
+        android:id="@+id/imageBtnCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/traffic_code_choice_btn"
+        android:elevation="5dp"
+        android:src="@drawable/traffic_code_car_45"
+        app:layout_constraintCircle="@id/imageViewSettingTrafficCode"
+        app:layout_constraintCircleAngle="30"
+        app:layout_constraintCircleRadius="150dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <ImageButton
+        android:id="@+id/imageBtnPedestrian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/traffic_code_choice_btn"
+        android:elevation="5dp"
+        android:src="@drawable/traffic_code_pedestrian_45"
+        app:layout_constraintCircle="@id/imageViewSettingTrafficCode"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="150dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <ImageButton
+        android:id="@+id/imageBtnChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/traffic_code_choice_btn"
+        android:elevation="5dp"
+        android:src="@drawable/traffic_code_child_45"
+        app:layout_constraintCircle="@id/imageViewSettingTrafficCode"
+        app:layout_constraintCircleAngle="150"
+        app:layout_constraintCircleRadius="150dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <ImageButton
+        android:id="@+id/imageBtnKickboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/traffic_code_choice_btn"
+        android:elevation="5dp"
+        android:src="@drawable/traffic_code_kickboard_45"
+        app:layout_constraintCircle="@id/imageViewSettingTrafficCode"
+        app:layout_constraintCircleAngle="210"
+        app:layout_constraintCircleRadius="150dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <ImageButton
+        android:id="@+id/imageBtnBicycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/traffic_code_choice_btn"
+        android:elevation="5dp"
+        android:src="@drawable/traffic_code_bicycle_45"
+        app:layout_constraintCircle="@id/imageViewSettingTrafficCode"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="150dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <ImageButton
+        android:id="@+id/imageBtnMotorcycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/traffic_code_choice_btn"
+        android:elevation="5dp"
+        android:src="@drawable/traffic_code_motorcycle_45"
+        app:layout_constraintCircle="@id/imageViewSettingTrafficCode"
+        app:layout_constraintCircleAngle="330"
+        app:layout_constraintCircleRadius="150dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="위험 대상 설정"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSettingTrafficCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:text="차량"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/trafficCodeSetBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSettingTrafficCode"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/trafficCodeSetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#3E59F1"
+        android:text="저장하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/trafficCodeRightBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/trafficCodeLeftBtn" />
+
+    <ImageButton
+        android:id="@+id/trafficCodeRightBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/traffic_code_choice_right_45"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/trafficCodeSetBtn" />
+
+    <ImageButton
+        android:id="@+id/trafficCodeLeftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/traffic_code_choice_left_45"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/trafficCodeSetBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
